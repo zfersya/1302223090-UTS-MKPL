@@ -1,16 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package lib;
 
-import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Fersya
- */
 public class EmployeeFamily {
     	private String spouseName;
 	private String spouseIdNumber;

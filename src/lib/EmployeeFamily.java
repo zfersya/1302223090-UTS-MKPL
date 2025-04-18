@@ -56,6 +56,10 @@ public class EmployeeFamily {
 		childIdNumbers.add(childIdNumber);
 	}
 
-      
+    public String getSpouseIdNumber() {
+        return spouseIdNumber;
+    }
+
+        
         
 }

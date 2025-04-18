@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Employee {
-	private EmployeeInfo personalInfo;
+	private EmployeeInfo employeeInfo;
         private EmployeeDate employeeDate;
         private EmployeeFamily employeeFamily;
         private EmployeeSalary employeeSalary;
@@ -14,7 +14,7 @@ public class Employee {
 	private boolean isForeigner;
         private Gender employeeGender;
 	
-	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, int yearJoined, int monthJoined, int dayJoined, boolean isForeigner, Gender employeeGender) {
+	public Employee(boolean isForeigner, Gender employeeGender) {
 //		this.employeeId = employeeId;
 //		this.firstName = firstName;
 //		this.lastName = lastName;
@@ -23,8 +23,10 @@ public class Employee {
 //		this.yearJoined = yearJoined;
 //		this.monthJoined = monthJoined;
 //		this.dayJoined = dayJoined;
-                this.personalInfo = personalInfo;
+                this.employeeInfo = employeeInfo;
                 this.employeeDate = employeeDate;
+                this.employeeFamily = employeeFamily;
+                this.employeeSalary = employeeSalary;
 		this.isForeigner = isForeigner;
 		this.employeeGender = employeeGender;
 		
@@ -52,4 +54,5 @@ public class Employee {
 		
 		return TaxFunction.calculateTax(monthlySalary, otherMonthlyIncome, monthWorkingInYear, annualDeductible, spouseIdNumber.equals(""), childIdNumbers.size());
 	}
+        
 }

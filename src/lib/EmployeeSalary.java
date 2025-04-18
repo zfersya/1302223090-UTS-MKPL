@@ -40,5 +40,21 @@ public class EmployeeSalary {
 	public void setAdditionalIncome(int income) {	
 		this.otherMonthlyIncome = income;
 	}
-	
+
+        public int getMonthlySalary() {
+            return monthlySalary;
+        }
+
+        public int getOtherMonthlyIncome() {
+            return otherMonthlyIncome;
+        }
+
+        public void setOtherMonthlyIncome(int otherMonthlyIncome) {
+            this.otherMonthlyIncome = otherMonthlyIncome;
+        }
+
+        public int getAnnualDeductible() {
+            return annualDeductible;
+        }
+        
 }
